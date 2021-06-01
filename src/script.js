@@ -159,7 +159,7 @@ const tick = () => {
   const elapsedTime = clock.getElapsedTime();
   
   const cameraAngles = elapsedTime * 0.5;
-  camera.position.x = Math.cos() * (7 + Math.sin(elapsedTime * .32))
+  camera.position.x = Math.cos(elapsedTime * 0.5) * (7 + Math.sin(elapsedTime * .32))
 
   // Update controls
   controls.update()
